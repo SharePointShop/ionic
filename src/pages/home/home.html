@@ -1,18 +1,28 @@
 <ion-header>
+
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Select a Survey</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3>Material Dispatch Surveys</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <button ion-button ion-button icon-left block (click)="goToPage('RegularDelivery')">
+    <ion-icon name="pin"></ion-icon>
+    Regular Delivery</button>
+  
+    <button ion-button ion-button icon-left block (click)="goToPage('CustomerDelivery')">
+        <ion-icon name="people"></ion-icon>
+        Customer Delivery</button>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+
+        <button ion-button ion-button icon-left block (click)="goToPage('OtherDuties')">
+            <ion-icon name="time"></ion-icon>
+            Other Duties</button>
+    
+
 </ion-content>
